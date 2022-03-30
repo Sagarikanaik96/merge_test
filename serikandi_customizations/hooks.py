@@ -9,6 +9,28 @@ app_color = "grey"
 app_email = "radhika.k@promantia.com"
 app_license = "MIT"
 
+fixtures = ["Client Script", 'Workflow', 'Workflow State', 'Workflow Action Master',
+			{
+				"dt": 'Custom Field',
+				"filters": [
+					["name", "in", 
+						[
+							"Item-make",
+							"Item-model",
+							"Item-column_break_29",
+							"Item-model_number",
+							"Item-serial_number",
+							"Item-specification",
+							"Material Request-department",
+							"Material Request-is_fixed_asset",
+							"Material Request-workflow_state",
+							"Material Request-employee"
+
+						]
+					]
+				]
+			}
+        ]
 # Includes in <head>
 # ------------------
 
