@@ -34,8 +34,18 @@ fixtures = ["Client Script", 'Workflow State', 'Workflow Action Master',
 							"Material Request-department",
 							"Material Request-is_fixed_asset",
 							"Material Request-workflow_state",
-							"Material Request-employee"
+							"Material Request Item-employee"
 
+						]
+					]
+				]
+			},
+			{
+				"dt": 'Property Setter',
+				"filters": [
+					["name", "in", 
+						[
+							"Material Request Item-item_code-reqd"
 						]
 					]
 				]
