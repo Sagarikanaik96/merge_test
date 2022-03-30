@@ -9,7 +9,17 @@ app_color = "grey"
 app_email = "radhika.k@promantia.com"
 app_license = "MIT"
 
-fixtures = ["Client Script", 'Workflow', 'Workflow State', 'Workflow Action Master',
+fixtures = ["Client Script", 'Workflow State', 'Workflow Action Master',
+			{
+				"dt": 'Workflow',
+				"filters": [
+					["name", "in", 
+						[
+							"Material Request Workflow"
+						]
+					]
+				]
+			},
 			{
 				"dt": 'Custom Field',
 				"filters": [
