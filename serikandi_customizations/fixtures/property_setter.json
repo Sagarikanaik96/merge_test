@@ -1,0 +1,19 @@
+[
+ {
+  "default_value": null,
+  "doc_type": "Material Request Item",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocField",
+  "field_name": "item_code",
+  "modified": "2022-03-30 16:13:26.961995",
+  "name": "Material Request Item-item_code-reqd",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "property": "reqd",
+  "property_type": "Check",
+  "row_name": null,
+  "value": "0"
+ }
+]
