@@ -34,7 +34,10 @@ fixtures = ["Client Script", 'Workflow State', 'Workflow Action Master',
 							"Material Request-department",
 							"Material Request-is_fixed_asset",
 							"Material Request-workflow_state",
-							"Material Request Item-employee"
+							"Material Request Item-employee",
+							"Material Request-company_abbreviation",
+							"Material Request Item-stock_available",
+							"Company-sequence_prefix"
 
 						]
 					]

@@ -4,12 +4,12 @@
   "doctype": "Client Script",
   "dt": "Material Request",
   "enabled": 1,
-  "modified": "2022-03-30 17:25:32.843010",
+  "modified": "2022-03-31 17:59:43.409047",
   "name": "Material Request-Form",
   "parent": null,
   "parentfield": null,
   "parenttype": null,
-  "script": "frappe.ui.form.on('Material Request', {\n\tbefore_save: function(frm) {\n\t   \n\t   cur_frm.set_value(\"is_fixed_asset\", 1);\n\t   cur_frm.refresh_field();\n\t}\n});\n\n\n",
+  "script": "frappe.ui.form.on('Material Request', {\n before_save: function(frm,cdt,cdn){\n    cur_frm.set_value(\"is_fixed_asset\", 1);\n\tcur_frm.refresh_field();\n } \n })\n\nfrappe.ui.form.on('Material Request Item', {\n item_code: function(frm,cdt,cdn){\n        var items = locals[cdt][cdn];\n        if(items.warehouse!= null && items.warehouse!= undefined){\n        frappe.db.get_value(\"Bin\", {\"warehouse\":items.warehouse,\"item_code\":items.item_code},[\"actual_qty\"],(w)=>{\n            items.stock_available=w.actual_qty;\n            refresh_field(\"items\");\n                \n            });\n        }\n    }\n})",
   "view": "Form"
  }
 ]
