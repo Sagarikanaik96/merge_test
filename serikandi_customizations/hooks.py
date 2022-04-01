@@ -52,6 +52,16 @@ fixtures = ["Client Script", 'Workflow State', 'Workflow Action Master',
 						]
 					]
 				]
+			},
+			{
+				"dt": 'Print Format',
+				"filters": [
+					["name", "in", 
+						[
+							"Purchase Order Print Format"
+						]
+					]
+				]
 			}
         ]
 # Includes in <head>
