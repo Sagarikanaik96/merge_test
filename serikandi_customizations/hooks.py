@@ -15,7 +15,8 @@ fixtures = ["Client Script", 'Workflow State', 'Workflow Action Master',
 				"filters": [
 					["name", "in", 
 						[
-							"Material Request Workflow"
+							"Material Request Workflow",
+							"Stock Entry Work Flow"
 						]
 					]
 				]
@@ -37,7 +38,8 @@ fixtures = ["Client Script", 'Workflow State', 'Workflow Action Master',
 							"Material Request Item-employee",
 							"Material Request-company_abbreviation",
 							"Material Request Item-stock_available",
-							"Company-sequence_prefix"
+							"Company-sequence_prefix",
+							"Stock Entry-reason_for_material_loss"
 
 						]
 					]
@@ -59,6 +61,17 @@ fixtures = ["Client Script", 'Workflow State', 'Workflow Action Master',
 					["name", "in", 
 						[
 							"Purchase Order Print Format"
+						]
+					]
+				]
+			},
+			{
+				"dt": 'Role',
+				"filters": [
+					["name", "in", 
+						[
+							"Store Manager",
+							"Store User"
 						]
 					]
 				]
