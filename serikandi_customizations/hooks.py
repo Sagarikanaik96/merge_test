@@ -16,7 +16,8 @@ fixtures = ["Client Script", 'Workflow State', 'Workflow Action Master',
 					["name", "in", 
 						[
 							"Material Request Workflow",
-							"Stock Entry Work Flow"
+							"Stock Entry Work Flow",
+							"Purchase Order Workflow"
 						]
 					]
 				]
