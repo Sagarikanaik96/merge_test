@@ -16,7 +16,8 @@ fixtures = ["Client Script", 'Workflow State', 'Workflow Action Master',
 					["name", "in", 
 						[
 							"Material Request Workflow",
-							"Stock Entry Work Flow"
+							"Stock Entry Work Flow",
+							"Purchase Order Workflow"
 						]
 					]
 				]
@@ -34,7 +35,6 @@ fixtures = ["Client Script", 'Workflow State', 'Workflow Action Master',
 							"Item-specification",
 							"Material Request-department",
 							"Material Request-is_fixed_asset",
-							"Material Request-workflow_state",
 							"Material Request Item-employee",
 							"Material Request-company_abbreviation",
 							"Material Request Item-stock_available",
