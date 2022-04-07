@@ -39,7 +39,26 @@ fixtures = ["Client Script", 'Workflow State', 'Workflow Action Master',
 							"Material Request-company_abbreviation",
 							"Material Request Item-stock_available",
 							"Company-sequence_prefix",
-							"Stock Entry-reason_for_material_loss"
+							"Stock Entry-reason_for_material_loss",
+							"Employee-scp_ac",
+							"Employee-og_nog",
+							"Employee-local_non_local",
+							"Employee-nationality",
+							"Employee-tana_date",
+							"Employee-employment_pass_expiry",
+							"Employee-contract_no",
+							"Employee-religion",
+							"Employee-medical_expiry",
+							"Employee-lpa_expiry",
+							"Employee-licence_position",
+							"Employee-bru_him_no",
+							"Employee-tap_ac",
+							"Employee-column_break_92",
+							"Employee-ic_no",
+							"Employee-job_category",
+							"Employee-employee_details"
+
+
 
 						]
 					]
