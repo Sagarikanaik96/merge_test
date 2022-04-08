@@ -57,10 +57,8 @@ fixtures = ["Client Script", 'Workflow State', 'Workflow Action Master',
 							"Employee-column_break_92",
 							"Employee-ic_no",
 							"Employee-job_category",
-							"Employee-employee_details"
-
-
-
+							"Employee-employee_details",
+							"Leave Application-attach_document"
 						]
 					]
 				]
