@@ -4,12 +4,25 @@
   "doctype": "Client Script",
   "dt": "Material Request",
   "enabled": 1,
-  "modified": "2022-03-31 17:59:43.409047",
+  "modified": "2022-04-08 19:29:12.553935",
   "name": "Material Request-Form",
   "parent": null,
   "parentfield": null,
   "parenttype": null,
-  "script": "frappe.ui.form.on('Material Request', {\n before_save: function(frm,cdt,cdn){\n    cur_frm.set_value(\"is_fixed_asset\", 1);\n\tcur_frm.refresh_field();\n } \n })\n\nfrappe.ui.form.on('Material Request Item', {\n item_code: function(frm,cdt,cdn){\n        var items = locals[cdt][cdn];\n        if(items.warehouse!= null && items.warehouse!= undefined){\n        frappe.db.get_value(\"Bin\", {\"warehouse\":items.warehouse,\"item_code\":items.item_code},[\"actual_qty\"],(w)=>{\n            items.stock_available=w.actual_qty;\n            refresh_field(\"items\");\n                \n            });\n        }\n    }\n})",
+  "script": "frappe.ui.form.on('Material Request', {\n before_save: function(frm,cdt,cdn){\n    cur_frm.set_value(\"is_fixed_asset\", 1);\n\tcur_frm.refresh_field();\n },\n\n  after_workflow_action: (frm)=> {\n      \n     if(frm.doc.workflow_state === 'Reviewed By Division Manager'){\n       frappe.call({\n          \"method\":\"frappe.client.set_value\",\n          \"args\":{\n              \"doctype\":\"Material Request\",\n              \"name\":frm.doc.name,\n              \"fieldname\":\"reviewed_by\",\n              \"value\":frappe.session.user\n          }\n      })\n    }\n     else if(frm.doc.workflow_state === 'Approved By GM-BS'){\n        frappe.call({\n          \"method\":\"frappe.client.set_value\",\n          \"args\":{\n              \"doctype\":\"Material Request\",\n              \"name\":frm.doc.name,\n              \"fieldname\":\"approved_by\",\n              \"value\":frappe.session.user\n          }\n      })\n    }\n  }\n});\n\nfrappe.ui.form.on('Material Request Item', {\n item_code: function(frm,cdt,cdn){\n        var items = locals[cdt][cdn];\n        if(items.warehouse!= null && items.warehouse!= undefined){\n        frappe.db.get_value(\"Bin\", {\"warehouse\":items.warehouse,\"item_code\":items.item_code},[\"actual_qty\"],(w)=>{\n            items.stock_available=w.actual_qty;\n            refresh_field(\"items\");\n                \n            });\n        }\n    }\n})",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Purchase Order",
+  "enabled": 1,
+  "modified": "2022-04-08 19:21:15.398458",
+  "name": "Purchase Order-Form",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "script": "frappe.ui.form.on(\"Purchase Order\", {\n  after_workflow_action: (frm)=> {\n      \n     if(frm.doc.workflow_state === 'Review For Approval (Technical and Commercial Approval )'){\n       frappe.call({\n          \"method\":\"frappe.client.set_value\",\n          \"args\":{\n              \"doctype\":\"Purchase Order\",\n              \"name\":frm.doc.name,\n              \"fieldname\":\"reviewed_by\",\n              \"value\":frappe.session.user\n          }\n      })\n    }\n     else if(frm.doc.workflow_state === 'Approved By Accounts'){\n        frappe.call({\n          \"method\":\"frappe.client.set_value\",\n          \"args\":{\n              \"doctype\":\"Purchase Order\",\n              \"name\":frm.doc.name,\n              \"fieldname\":\"approved_by\",\n              \"value\":frappe.session.user\n          }\n      })\n    }\n  }\n});",
   "view": "Form"
  }
 ]

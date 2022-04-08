@@ -18,6 +18,8 @@ fixtures = ["Client Script", 'Workflow State', 'Workflow Action Master',
 							"Material Request Workflow",
 							"Stock Entry Work Flow",
 							"Purchase Order Workflow"
+							"Purchase Invoice Workflow",
+							"Purchase Receipt Workflow"
 						]
 					]
 				]
@@ -58,7 +60,14 @@ fixtures = ["Client Script", 'Workflow State', 'Workflow Action Master',
 							"Employee-ic_no",
 							"Employee-job_category",
 							"Employee-employee_details",
+							"Purchase Order-approved_by",
+							"Purchase Order-reviewed_by",
+							"Material Request-reviewed_by",
+							"Material Request-approved_by",
+							"Item-part_number",
+							"Material Request-priority",
 							"Leave Application-attach_document"
+
 						]
 					]
 				]
@@ -78,7 +87,8 @@ fixtures = ["Client Script", 'Workflow State', 'Workflow Action Master',
 				"filters": [
 					["name", "in", 
 						[
-							"Purchase Order Print Format"
+							"Purchase Order Print Format",
+							"Material Request Print Format"
 						]
 					]
 				]
