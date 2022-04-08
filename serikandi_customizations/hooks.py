@@ -18,6 +18,8 @@ fixtures = ["Client Script", 'Workflow State', 'Workflow Action Master',
 							"Material Request Workflow",
 							"Stock Entry Work Flow",
 							"Purchase Order Workflow"
+							"Purchase Invoice Workflow",
+							"Purchase Receipt Workflow"
 						]
 					]
 				]

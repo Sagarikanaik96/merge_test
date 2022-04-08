@@ -214,5 +214,29 @@
   "parenttype": null,
   "style": "Danger",
   "workflow_state_name": "Cancelled"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2022-04-07 18:37:46.407983",
+  "name": "Approved By Division Account Incharge",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "style": "Success",
+  "workflow_state_name": "Approved By Division Account Incharge"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2022-04-07 18:56:02.345534",
+  "name": "Pending Approval",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "style": "Warning",
+  "workflow_state_name": "Pending Approval"
  }
 ]
