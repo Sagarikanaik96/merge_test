@@ -88,7 +88,8 @@ fixtures = ["Client Script", 'Workflow State', 'Workflow Action Master',
 					["name", "in", 
 						[
 							"Purchase Order Print Format",
-							"Material Request Print Format"
+							"Material Request Print Format",
+							"Sales Invoice Print"
 						]
 					]
 				]
