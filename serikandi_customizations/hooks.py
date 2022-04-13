@@ -66,8 +66,11 @@ fixtures = ["Client Script", 'Workflow State', 'Workflow Action Master',
 							"Material Request-approved_by",
 							"Item-part_number",
 							"Material Request-priority",
-							"Leave Application-attach_document"
-
+							"Leave Application-attach_document",
+							"Employee-section_break_107",
+							"Employee-employee_items_allowed",
+							"Purchase Order-sqn_items",
+							"Supplier Quotation Item-alternative_item"
 						]
 					]
 				]
@@ -77,7 +80,12 @@ fixtures = ["Client Script", 'Workflow State', 'Workflow Action Master',
 				"filters": [
 					["name", "in", 
 						[
-							"Material Request Item-item_code-reqd"
+							"Material Request Item-item_code-reqd",
+							"Supplier Quotation Item-uom-columns",
+							"Supplier Quotation Item-qty-columns",
+							"Supplier Quotation Item-rate-columns",
+							"Supplier Quotation Item-lead_time_days-columns",
+							"Supplier Quotation Item-lead_time_days-in_list_view"
 						]
 					]
 				]
