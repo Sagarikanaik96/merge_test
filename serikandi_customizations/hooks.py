@@ -67,6 +67,7 @@ fixtures = ["Client Script", 'Workflow State', 'Workflow Action Master',
 							"Item-part_number",
 							"Material Request-priority",
 							"Leave Application-attach_document",
+							"Company-company_abbreviation"
 							"Employee-section_break_107",
 							"Employee-employee_items_allowed",
 							"Purchase Order-sqn_items",
