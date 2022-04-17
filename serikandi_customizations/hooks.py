@@ -12,6 +12,7 @@ app_license = "MIT"
 #test
 #123456
 #22
+#44
 fixtures = ["Client Script", 'Workflow State', 'Workflow Action Master',
 			{
 				"dt": 'Workflow',
