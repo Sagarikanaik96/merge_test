@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include serikandi_customizations *.css
+recursive-include serikandi_customizations *.csv
+recursive-include serikandi_customizations *.html
+recursive-include serikandi_customizations *.ico
+recursive-include serikandi_customizations *.js
+recursive-include serikandi_customizations *.json
+recursive-include serikandi_customizations *.md
+recursive-include serikandi_customizations *.png
+recursive-include serikandi_customizations *.py
+recursive-include serikandi_customizations *.svg
+recursive-include serikandi_customizations *.txt
+recursive-exclude serikandi_customizations *.pyc
