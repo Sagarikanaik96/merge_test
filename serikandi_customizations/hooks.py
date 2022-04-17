@@ -9,6 +9,7 @@ app_color = "grey"
 app_email = "abcd@promantia.com"
 app_license = "MIT"
 
+#test
 fixtures = ["Client Script", 'Workflow State', 'Workflow Action Master',
 			{
 				"dt": 'Workflow',
