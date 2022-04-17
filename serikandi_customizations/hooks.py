@@ -6,7 +6,7 @@ app_publisher = "Promantia Business Solutions Pvt Ltd"
 app_description = "Serikandi Customizations"
 app_icon = "octicon octicon-file-directory"
 app_color = "grey"
-app_email = "abc@promantia.com"
+app_email = "abcd@promantia.com"
 app_license = "MIT"
 
 fixtures = ["Client Script", 'Workflow State', 'Workflow Action Master',
