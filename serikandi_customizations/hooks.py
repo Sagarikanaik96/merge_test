@@ -10,7 +10,7 @@ app_email = "abcd@promantia.com"
 app_license = "MIT"
 
 #test
-#1234
+#123456
 fixtures = ["Client Script", 'Workflow State', 'Workflow Action Master',
 			{
 				"dt": 'Workflow',
