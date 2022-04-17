@@ -1,0 +1,36 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2022-04-12 20:40:56.078018",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letter_head": "Serikandi Letter Head",
+ "modified": "2022-04-12 20:40:56.078018",
+ "modified_by": "Administrator",
+ "module": "Serikandi Customizations",
+ "name": "Supplier Quotation Comparison Custom",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Supplier Quotation",
+ "report_name": "Supplier Quotation Comparison Custom",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "Manufacturing Manager"
+  },
+  {
+   "role": "Purchase Manager"
+  },
+  {
+   "role": "Purchase User"
+  },
+  {
+   "role": "Stock User"
+  }
+ ]
+}
