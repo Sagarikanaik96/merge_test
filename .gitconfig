@@ -1,0 +1,22 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "upstream"]
+	url = https://github.com/Sagarikanaik96/merge_test.git
+	fetch = +refs/heads/master:refs/remotes/upstream/master
+[branch "master"]
+	remote = upstream
+	merge = refs/heads/master
+[remote "origin"]
+	url = https://github.com/Sagarikanaik96/merge_test.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "dev4"]
+	remote = origin
+	merge = refs/heads/dev4
+[branch "preprod"]
+	remote = origin
+	merge = refs/heads/preprod
+[merge "ours"]
+	driver = true
